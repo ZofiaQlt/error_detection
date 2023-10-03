@@ -14,9 +14,6 @@ The datasets come from the internal data sources of the virtual ONCFM organizati
 <img width="929" alt="Capture d’écran 2023-10-03 à 19 57 57" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/7022c4af-3d51-4c9c-98f5-cbc0c9e34447">
 <br>
 <br>
-
-<br>
-<br>
 <img width="999" alt="Capture d’écran 2023-10-03 à 20 03 13" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/577cda93-a2c3-491e-b59f-7ee4c1ba1945">
 <br>
 <br>
