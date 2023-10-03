@@ -1,5 +1,5 @@
 # False banknotes detection 
-<img width="294" alt="logo" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/a07dd008-b088-40a2-808f-6094e079691e">
+<img width="250" alt="logo" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/a07dd008-b088-40a2-808f-6094e079691e">
 <br>
 <br>
 The datasets come from the internal data sources of the virtual ONCFM organisation
