@@ -5,7 +5,6 @@ The project combines statistical tests and machine learning techniques to identi
 <br><br>
 The machine learning models have been meticulously trained on a vast dataset of genuine and counterfeit banknotes sourced from the internal data sources of the virtual ONCFM organization fighting currency frauds, and enabling FraudGuard to make accurate predictions. 
 <br><br>
-
 *Imagine a world where you can confidently verify the authenticity of a banknote right from your computer. No more second-guessing, no more relying solely on specialized machines. With FraudGuard, the power is in your hands.*
 <br>
 <br>
