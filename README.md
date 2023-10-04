@@ -1,4 +1,4 @@
-# FraudGuard: counterfeit currency detection system
+# FraudGuard: unmasking forgery
 <!--<img width="250" alt="logo" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/a07dd008-b088-40a2-808f-6094e079691e">-->
 In an era where counterfeit currency poses a significant threat to financial institutions and economies worldwide, this project aims to develop a robust fraud prevention system to identify false banknotes swiftly and accurately.
 The project combines statistical tests and machine learning techniques to identify forgery with ease.
