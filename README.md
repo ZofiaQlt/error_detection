@@ -7,7 +7,6 @@ The machine learning models have been meticulously trained on a vast dataset of 
 <br><br>
 
 *Imagine a world where you can confidently verify the authenticity of a banknote right from your computer. No more second-guessing, no more relying solely on specialized machines. With FraudGuard, the power is in your hands.*
-
 <br>
 <br>
 <img width="945" alt="Capture d’écran 2023-10-03 à 19 56 24" src="https://github.com/ZofiaQlt/fraud_detection_machine_learning/assets/67431758/3637520e-5ec7-4a14-a31c-fac3fa6a59a9">
