@@ -1,4 +1,3 @@
-import pandas as pd
 from scipy import stats
 
 def count_outliers(billets, seuil=1.96):
