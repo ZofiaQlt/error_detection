@@ -56,14 +56,10 @@ def plot_distribution_stats(data, figsize=(20, 10)):
     
 #====================================================
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import shapiro
-
 def plot_distribution_comparison(distri_avant, distri_après, column_name):
     
     # Créez une figure avec deux sous-graphiques côte à côte
-    fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+    _, axes = plt.subplots(1, 2, figsize=(16, 6))
 
     if distri_avant[column_name].isnull().any():
         # Calcul de skewness, kurtosis et Shapiro-Wilk pour la colonne avant régression
