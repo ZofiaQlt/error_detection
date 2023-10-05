@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
 import numpy as np
-import pandas as pd
 
 def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0, lims=None):
-    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20,10))
+    _, axes = plt.subplots(nrows=1, ncols=2, figsize=(20,10))
     for i, ax in enumerate(axes.flatten()):
         if i < len(axis_ranks):
             d1, d2 = axis_ranks[i]
@@ -19,14 +18,14 @@ def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0,
                 # affichage des flèches
                 if pcs.shape[1] < 30:
                     ax.quiver(np.zeros(pcs.shape[1]), np.zeros(pcs.shape[1]),
-                       pcs[d1,:], pcs[d2,:], 
+                       pcs[d1,:], pcs[d2,:],
                        angles='xy', scale_units='xy', scale=1, color="grey")
                 else:
                     lines = [[[0,0],[x,y]] for x,y in pcs[[d1,d2]].T]
                     ax.add_collection(LineCollection(lines, axes=ax, alpha=.1, color='black'))
 
-                # affichage des noms des variables  
-                if labels is not None:  
+                # affichage des noms des variables
+                if labels is not None:
                     for j,(x, y) in enumerate(pcs[[d1,d2]].T):
                         if x >= -1 and x <= 1 and y >= -1 and y <= 1:
                             ax.text(x, y, labels[j], fontsize='14', ha='center', va='center', rotation=label_rotation, color="blue", alpha=0.5)
@@ -43,7 +42,6 @@ def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0,
     plt.show()
 
 
-        
 def display_factorial_planes(X_projected, n_comp, pca, axis_ranks, labels=None, alpha=1, illustrative_var=None):
     # création de la figure
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20, 10))
