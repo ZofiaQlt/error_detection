@@ -1,6 +1,4 @@
-from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RepeatedStratifiedKFold
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import PowerTransformer
 from sklearn.preprocessing import RobustScaler
@@ -10,7 +8,6 @@ from sklearn.preprocessing import MaxAbsScaler
 from sklearn.preprocessing import QuantileTransformer
 from pandas.plotting import scatter_matrix
 from matplotlib import pyplot
-from sklearn.pipeline import Pipeline
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
