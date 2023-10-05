@@ -158,10 +158,7 @@ def analyze_outliers(billets, hue=None):
 #######################################################################################
             
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy import stats
 
 def analyze_outliers_bool(billets):
     
