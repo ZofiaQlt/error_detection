@@ -88,8 +88,9 @@ def analyze_outliers(billets, hue=None):
                 max_value = max(outlier_z[i])
                 mean_value = np.mean(outlier_z[i])
                 std_value = np.std(outlier_z[i])
-                print(f"{bold}{i} : {nb_outlier_z} outliers - {percentage} % of the dataset - min {min_value} - max {max_value} - mean {mean_value:.2f} - std {std_value:.2f}\n\n{end}")
-                print(outlier_z[[i, hue]])
+               print(f"{bold}{i} : {nb_outlier_z} outliers - {percentage} % of the dataset - "
+                    f"min {min_value} - max {max_value} - mean {mean_value:.2f} - std {std_value:.2f}\n\n{end}")
+  print(outlier_z[[i, hue]])
                 print("-" * 64)
             else:
                 min_value = None
@@ -156,17 +157,12 @@ def analyze_outliers(billets, hue=None):
  
 
 #######################################################################################
-            
-import numpy as np
-import matplotlib.pyplot as plt
 
 def analyze_outliers_bool(billets):
     
     # Paramétrage du style du texte
     bold = "\033[1m"#
-    italic = '\033[3m'
     red = '\033[91m'
-    cyan = "\033[34m"
     end = "\033[0;0m"
     
     # Couleurs à contraste élevé pour améliorer l'accessibilité des graphiques aux personnes malvoyantes
@@ -175,7 +171,7 @@ def analyze_outliers_bool(billets):
 
     
     #if isinstance(billets, pd.Series):  # Si 'billets' est un DataFrame
-        #billets = billets.to_frame()
+    #billets = billets.to_frame()
     
     # on détermine les colonnes numériques
     num = []
