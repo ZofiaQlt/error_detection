@@ -1,5 +1,4 @@
 import pickle
-import pandas as pd
 
 def write_pickle(path, model_object, save_as:str):
     '''
