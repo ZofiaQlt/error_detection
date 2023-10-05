@@ -3,18 +3,6 @@ from matplotlib.collections import LineCollection
 import numpy as np
 import pandas as pd
 
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.collections import LineCollection
-
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
-
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.collections import LineCollection
-
 def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0, lims=None):
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20,10))
     for i, ax in enumerate(axes.flatten()):
