@@ -14,9 +14,7 @@ def regression_analysis(data, target_variable, explanatory_vars, intercept=True,
     if intercept == False:
     
         bold = "\033[1m"
-        italic = '\033[3m'
         red = '\033[91m'
-        cyan = "\033[34m"
         end = "\033[0;0m"
 
         # Conversion automatique des variables booléennes en variables numériques (0 ou 1)
