@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -167,7 +165,7 @@ def log_regression_analysis(data, target_variable, explanatory_vars, intercept=T
                         if remove_var in combo:
                             combo.remove(remove_var)
                         else:
-                            pass  
+                            pass
                                                 
                         #print(f"Removed variable '{remove_var}' with p-value: {max_p_value:.4f}, Remaining variables: {', '.join(combo)}")
                     else:
