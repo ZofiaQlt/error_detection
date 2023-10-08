@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 from scipy import stats
 
@@ -26,7 +25,7 @@ def calculate_normality(data_frame, alpha=0.05):
             elif -1 < skew < -0.5 or 0.5 < skew < 1.0:
                 skewness_result = (red + f'The distribution is moderately skewed' + end)
             else:
-                skewness_result = (red + f'The distribution is highly skewed' + end)
+                skewness_result = (red + 'The distribution is highly skewed' + end)
 
             # Interpreting Kurtosis
             if -0.5 < kurtosis < 0.5:
@@ -55,7 +54,7 @@ def calculate_normality(data_frame, alpha=0.05):
                 shapiro_result = (red + 'Sample does not look Gaussian (reject H0)' + end)
 
             # Print normality test results
-            print(f"Tests statistiques :\nD'Agostino-Pearson:" + f" Statistic={stat_dagostino:.4f}, p={p_dagostino:.4f} - {dagostino_result}")
-            print(f"Shapiro-Wilk:" + f" Statistic={stat_shapiro:.4f}, p={p_shapiro:.4f} - {shapiro_result}")
+            print("Tests statistiques :\nD'Agostino-Pearson:" + f" Statistic={stat_dagostino:.4f}, p={p_dagostino:.4f} - {dagostino_result}")
+            print("Shapiro-Wilk:" + f" Statistic={stat_shapiro:.4f}, p={p_shapiro:.4f} - {shapiro_result}")
     
     print('--' * 25)
