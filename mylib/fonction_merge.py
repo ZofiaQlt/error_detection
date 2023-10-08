@@ -11,7 +11,7 @@ def df_merge(df1, df2, column):
     print("\033[31m" + f"La proportion de 'left_only' est de {round(float(proportion_left), 3)} % {len(df_left)} lignes")
     print("\033[31m" + f"La proportion de 'right_only' est de {round(float(proportion_right), 3)} % {len(df_right)} lignes")
     if proportion_both < 100:
-        print("\033[31m" + f"\nAperçu des données selon les jointures 'both', 'left_only' ou 'right_only' :" + "\033[0;0m")
+        print("\033[31m" + "\nAperçu des données selon les jointures 'both', 'left_only' ou 'right_only' :" + "\033[0;0m")
         return df_both.head(), df_left.head(), df_right.head()
     
     
