@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 
@@ -25,7 +24,7 @@ def plot_outlier_piecharts(data, column, title1='', title2=''):
     outliers_df = pd.DataFrame(outlier_data, columns=['Variable', column])
 
     # Créer une figure avec deux sous-graphiques
-    fig, axes = plt.subplots(1, 2, figsize=(14, 8))
+    _, axes = plt.subplots(1, 2, figsize=(14, 8))
 
     # Réglage de l'espace horizontal entre les graphiques
     plt.subplots_adjust(wspace=20)
